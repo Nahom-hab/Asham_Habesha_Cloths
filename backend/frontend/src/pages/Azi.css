@@ -1,0 +1,147 @@
+.first {
+    animation: smoothWave 5s ease-in-out infinite;
+}
+
+.second {
+    animation: smoothWave2 5s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+.third {
+    animation: smoothWave3 5s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+.fourth {
+    animation: smoothWave4 5s ease-in-out infinite;
+    animation-delay: 0.9s;
+}
+
+.first:hover,
+.second:hover,
+.third:hover,
+.fourth:hover {
+    animation: slide_Up 2s ease-in-out forwards;
+
+}
+
+/* animation: none;
+    transform: translateY(-130px) rotate(-12deg);
+    transition: transform 2s ease-in-out; */
+
+/* .first:not(:hover),
+.second:not(:hover),
+.third:not(:hover),
+.fourth:not(:hover) {
+    animation: slide_down 2s ease-in-out;
+    /* transform: translateY(-130px) rotate(-12deg);
+    transition: transform 2s ease-in-out; */
+/* } */
+
+@keyframes slide_Up {
+
+    0% {
+        transform: translateY(0) rotate(-12deg);
+    }
+
+    100% {
+        transform: translateY(-130px) rotate(-12deg);
+    }
+}
+
+
+@keyframes smoothWave {
+
+    0%,
+    100% {
+        transform: translateY(40px) rotate(-12deg);
+    }
+
+    20% {
+        transform: translateY(25px) rotate(-12deg);
+    }
+
+    40% {
+        transform: translateY(10px) rotate(-12deg);
+    }
+
+    60% {
+        transform: translateY(0px) rotate(-12deg);
+    }
+
+    80% {
+        transform: translateY(10px) rotate(-12deg);
+    }
+}
+
+@keyframes smoothWave2 {
+
+    0%,
+    100% {
+        transform: translateY(25px) rotate(-12deg);
+    }
+
+    20% {
+        transform: translateY(10px) rotate(-12deg);
+    }
+
+    40% {
+        transform: translateY(0px) rotate(-12deg);
+    }
+
+    60% {
+        transform: translateY(10px) rotate(-12deg);
+    }
+
+    80% {
+        transform: translateY(20px) rotate(-12deg);
+    }
+}
+
+@keyframes smoothWave3 {
+
+    0%,
+    100% {
+        transform: translateY(10px) rotate(-12deg);
+    }
+
+    20% {
+        transform: translateY(0px) rotate(-12deg);
+    }
+
+    40% {
+        transform: translateY(15px) rotate(-12deg);
+    }
+
+    60% {
+        transform: translateY(25px) rotate(-12deg);
+    }
+
+    80% {
+        transform: translateY(15px) rotate(-12deg);
+    }
+}
+
+@keyframes smoothWave4 {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(-12deg);
+    }
+
+    20% {
+        transform: translateY(10px) rotate(-12deg);
+    }
+
+    40% {
+        transform: translateY(20px) rotate(-12deg);
+    }
+
+    60% {
+        transform: translateY(10px) rotate(-12deg);
+    }
+
+    80% {
+        transform: translateY(0px) rotate(-12deg);
+    }
+}
